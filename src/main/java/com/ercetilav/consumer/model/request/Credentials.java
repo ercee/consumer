@@ -1,4 +1,4 @@
-package com.ercetilav.consumer.model;
+package com.ercetilav.consumer.model.request;
 
 import java.io.Serializable;
 

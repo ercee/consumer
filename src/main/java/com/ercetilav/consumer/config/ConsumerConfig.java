@@ -2,7 +2,7 @@ package com.ercetilav.consumer.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.*;
-import com.ercetilav.consumer.model.*;
+import com.ercetilav.consumer.model.request.*;
 
 @Configuration
 @ConfigurationProperties(prefix = "consumer")
@@ -11,6 +11,7 @@ public class ConsumerConfig {
     
     private Credentials credentials;
     private Host host;
+    private ReportParam reportParam;
     
     public Credentials getCredentials() {
         return credentials;
@@ -27,4 +28,13 @@ public class ConsumerConfig {
     public void setHost(Host aHost) {
         host = aHost;
     }
+    
+    public ReportParam getReportParam() {
+        return reportParam;
+    }
+    
+    public void setReportParam(ReportParam aReportParam) {
+        reportParam = aReportParam;
+    }
 }
+
